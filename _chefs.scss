@@ -1,0 +1,48 @@
+/*chefs*/
+.chefs-title {
+    text-align: center;
+    margin: 0 auto 80px;
+}
+
+.chef-card {
+    display: flex;
+    gap: 30px;
+}
+
+.chefs-title .accent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.chefs-list {
+    display: flex;
+    gap: 40px 30px;
+    flex-wrap: wrap;
+}
+
+.chefs-item {
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.chefs-title .accent::before,
+.chefs-title .accent::after {
+    content: '';
+    flex: 1;
+    border-top: 2px solid var(--color-accent-dark);
+}
+
+.chef-photo {
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0px 0px var(--color-primary-light), -16px 16px 0 2px
+}
+
+.chef-text p {
+    margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+    margin-bottom: 0px;
+}
